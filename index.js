@@ -55,7 +55,12 @@ app.get('/test', function(req, res) {
 // Store indico analyze with employeeid under sentiment
 app.post('/sentiment', indicoUse.receiveDataAndProcess);
 
+
 app.get('/getdata', getData.getDataAllTime);
+
+app.get('/getlastdaydata', getData.getDataLastDayData);
+
+app.get('/cleanDB', indicoUse.cleanDB);
 
 var port = process.env.PORT || 1337;
 var httpServer = require('http').createServer(app);
