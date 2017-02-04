@@ -5,6 +5,7 @@ var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
 var bodyParser  = require('body-parser');
+var indicoUse = require('./controllers/indicoUse.js');
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
@@ -51,11 +52,7 @@ app.get('/test', function(req, res) {
 
 // Receive json data as a string and analyze with indico api
 // Store indico analyze with employeeid under sentiment
-app.post('/sentiment', function(req, res){
-  console.log(req.body);
-  res.status(200).send("hello");
-
-});
+app.post('/sentiment', indicoUse.receiveDataAndProcess);
 
 var port = process.env.PORT || 1337;
 var httpServer = require('http').createServer(app);
