@@ -11,7 +11,6 @@ var indicoUse = {};
 // make employee object queries
 var Employee = Parse.Object.extend("Employee");
 var employee = new Employee();
-var employeeQuery = new Parse.Query(Employee);
 
 
 // input: message and employeeid as req.body.message and req.body.employeeid
@@ -22,6 +21,7 @@ indicoUse.receiveDataAndProcess = function(req, res){
 	if (!req.body.employeeid || !req.body.message) {
 		return res.status(400).send("requires employeeid and message");
 	}
+	
 
 
 	// get analysis from indico
@@ -56,16 +56,6 @@ indicoUse.receiveDataAndProcess = function(req, res){
   			res.status(500).send({error: err});
   		}
   	});
-
-
-
-	
-
-
-
-	//res.send("hi");
-
-
 
 };
 
