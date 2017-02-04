@@ -1,0 +1,2 @@
+{"error":{"code":105,"message":"Invalid field name: emotionData.time."},"level":"error","message":"Error generating response. ParseError { code: 105, message: 'Invalid field name: emotionData.time.' }","timestamp":"2017-02-04T21:17:16.586Z"}
+{"error":{"code":105,"message":"Invalid field name: emotionData.time."},"level":"error","message":"Error generating response. ParseError { code: 105, message: 'Invalid field name: emotionData.time.' }","timestamp":"2017-02-04T21:17:36.562Z"}
