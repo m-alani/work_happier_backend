@@ -1,0 +1,16 @@
+*** Skill Invocation Name:
+My Day
+
+*** Intents Schema:
+{
+  "intents": [
+    {
+      "intent":"MorningGreeting"
+    }
+  ]
+}
+
+*** Sample Utterances
+MorningGreeting how are you doing this morning
+
+*** The skill calls an AWS Lambda ARN (Amazon Resource Name) in North America (Check 'morning_lamba.js')
