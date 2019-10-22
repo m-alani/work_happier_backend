@@ -14,7 +14,7 @@
     "indico.io": "^0.10.5",
     "kerberos": "~0.0.x",
     "parse": "~1.8.0",
-    "parse-server": "~2.2.2"
+    "parse-server": "~3.9.0"
   },
   "scripts": {
     "start": "node index.js"
